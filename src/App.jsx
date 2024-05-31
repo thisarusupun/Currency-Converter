@@ -1,6 +1,7 @@
 import { useState } from "react";
 import InputBox from "./components/InputBox";
 import useCurrencyInfo from "./hooks/useCurrencyInfo";
+import bg from "/bg.jpg";
 
 function App() {
   const [amount, setAmount] = useState();
@@ -26,9 +27,7 @@ function App() {
     <div
       className="w-full h-screen flex flex-wrap
     justify-center items-center bg-cover bg-no-repeat"
-      style={{
-        backgroundImage: `url(https://static.news.bitcoin.com/wp-content/uploads/2022/12/emmer-cbdc.jpg)`,
-      }}
+      style={{ backgroundImage: "url(/bg.jpg)" }}
     >
       <div className="w-full">
         <div className="w-full max-w-md mx-auto border border-g rounded-lg p-5 backdrop-blur-sm bg-white/30">
